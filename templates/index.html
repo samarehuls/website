@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Bakery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Artisan Bakery</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Freshly Baked Every Day</h2>
+        <p>Discover the joy of handcrafted bread and pastries.</p>
+        <button>Order Now</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h3>Our Passion for Baking</h3>
+        <p>
+            At Artisan Bakery, we specialize in sourdough breads and pastries crafted with love.
+            Every loaf tells a story of quality ingredients and sustainable practices.
+        </p>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/bread.jpg') }}" alt="Sourdough Bread">
+            <h4>Sourdough Bread</h4>
+            <button>View More</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/croissant.jpg') }}" alt="Croissant">
+            <h4>Butter Croissant</h4>
+            <button>View More</button>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='images/cookies.jpg') }}" alt="Cookies">
+            <h4>Chocolate Chip Cookies</h4>
+            <button>View More</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Artisan Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
