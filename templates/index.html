@@ -9,46 +9,53 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Navigation Bar -->
+    <header class="navbar">
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Artisan Bakery Logo" class="logo">
-        <h1>Artisan Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
+                <li><a href="mailto:bakery@example.com">Email</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Freshly Baked Every Day</h2>
-        <p>Discover the joy of handcrafted bread and pastries.</p>
+        <div class="hero-content">
+            <h1>Artisan Bakery</h1>
+            <p>Handcrafted sourdough breads & pastries made with passion.</p>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h3>Our Passion for Baking</h3>
-        <p>
-            At Artisan Bakery, we specialize in sourdough breads and pastries crafted with love.
-            Every loaf tells a story of quality ingredients and sustainable practices.
-        </p>
-    </section>
-
-    <!-- Product Section -->
-    <section class="products">
-        <div class="product">
+    <!-- Three Images Section -->
+    <section class="image-gallery">
+        <div class="image-card">
             <img src="{{ url_for('static', filename='images/bread.jpg') }}" alt="Sourdough Bread">
-            <h4>Sourdough Bread</h4>
+            <h3>Sourdough Bread</h3>
+            <p>Our signature sourdough bread, made with love and the finest ingredients.</p>
         </div>
-        <div class="product">
+        <div class="image-card">
             <img src="{{ url_for('static', filename='images/croissant.jpg') }}" alt="Croissant">
-            <h4>Butter Croissant</h4>
+            <h3>Butter Croissant</h3>
+            <p>Flaky, buttery croissants, perfect for any time of the day.</p>
         </div>
-        <div class="product">
-            <img src="{{ url_for('static', filename='images/cookies.jpg') }}" alt="Cookies">
-            <h4>Chocolate Chip Cookies</h4>
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/cookies.jpg') }}" alt="Chocolate Chip Cookies">
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Soft and chewy cookies with just the right amount of chocolate.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Artisan Bakery. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.tiktok.com" target="_blank">TikTok</a> |
+            <a href="mailto:bakery@example.com">Email</a>
+        </div>
+        <p>&copy; 2024 Artisan Bakery | Made with ♥</p>
     </footer>
 </body>
 </html>
