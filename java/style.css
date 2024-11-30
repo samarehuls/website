@@ -212,28 +212,45 @@ body {
 
 /* About Section */
 .about {
-    margin-top: 60px;
-    padding: 40px;
-    background: var(--accent-color);
-    color: var(--white);
-    border-radius: 15px;
-    text-align: center;
+    background-color: #F2A73B; /* Oranje/geel als achtergrondkleur */
+    padding: 3em 1.5em; /* Iets minder ruimte binnen de sectie */
+    margin-top: 2.5em; /* Iets minder ruimte boven deze sectie */
+    border-radius: 8px; /* Subtielere afgeronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Licht schaduweffect */
+    text-align: center; /* Alles centreren */
 }
 
 .about h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2em; /* Kleinere titel */
+    color: white; /* Witte tekstkleur voor de titel */
+    margin-bottom: 1.2em; /* Iets minder ruimte onder de titel */
 }
 
 .about ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center; /* Lijst ook centreren */
 }
 
-.about li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.6;
+.about ul li {
+    margin-bottom: 1.5em; /* Iets minder ruimte tussen de items */
+}
+
+.about ul li h3 {
+    font-size: 1.6em; /* Kleinere koppen */
+    color: white; /* Witte tekstkleur voor koppen */
+    margin-bottom: 0.4em; /* Kleinere marge onder de koppen */
+}
+
+.about ul li p {
+    font-size: 1.1em; /* Kleinere tekstgrootte voor de paragrafen */
+    line-height: 1.5; /* Kleinere line-height voor betere verhouding */
+    color: white; /* Witte tekstkleur voor de paragraaf */
+}
+
+.features {
+    margin-bottom: 2.5em; /* Iets minder ruimte onder de features-sectie */
 }
 
 /* Footer */
