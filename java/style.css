@@ -248,6 +248,66 @@ body {
     margin-bottom: 2.5em; /* Iets minder ruimte onder de features-sectie */
 }
 
+/* Stijl voor de Bestellen link in de header */
+.bestellen-link {
+    color: var(--white); /* Zorg ervoor dat de tekst wit is */
+    font-size: 18px;
+    font-weight: 600; /* Maak de tekst dikgedrukt */
+    text-decoration: none; /* Verwijder de onderstreping van de link */
+    margin-left: 20px; /* Voeg wat ruimte toe tussen de link en andere elementen */
+    transition: color 0.3s ease; /* Voeg een fade-in effect toe bij hover */
+}
+
+.bestellen-link:hover {
+    color: var(--accent-color); /* Verander de kleur naar de accentkleur bij hover */
+}
+
+/* Bestellen Pagina */
+.order-section {
+    background: var(--white); /* Witte achtergrond voor de bestelsectie */
+    padding: 3em 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-section h1 {
+    font-size: 2.4em;
+    color: var(--accent-color); /* Gele kleur voor de header */
+    margin-bottom: 1.5em;
+}
+
+.order-section p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto 2em;
+}
+
+.order-section .cta-button {
+    background-color: var(--accent-color); /* Gele kleur voor de button */
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.order-section .cta-button:hover {
+    background-color: var(--text-color); /* Donkergroene hover-kleur */
+}
+
+.order-section .social-link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.order-section .social-link:hover {
+    text-decoration: underline;
+}
 /* Footer */
 .footer {
     background: var(--header-bg);
@@ -257,3 +317,4 @@ body {
     margin-top: 60px;
     position: relative;
 }
+
