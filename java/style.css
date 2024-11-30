@@ -91,34 +91,29 @@ body {
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Ruimte tussen de iconen */
+    align-items: center;
 }
 
 .social-icon {
-    color: var(--white);
-    font-size: 24px;
+    color: var(--white); /* Witte kleur voor de iconen */
+    font-size: 24px; /* Grote iconen */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: var(--accent-color);
-    transform: scale(1.2);
+    color: var(--accent-color); /* Kleur verandert bij hover */
+    transform: scale(1.2); /* Vergroot de iconen een beetje bij hover */
 }
 
-.language-selector button {
-    background: var(--accent-color);
-    color: var(--header-bg);
-    padding: 8px 12px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.language-selector button:hover {
-    background: #d98c24;
-    transform: scale(1.1);
+/* Optioneel: Pas de iconen aan voor mobiele weergave */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 15px; /* Iets minder ruimte op kleinere schermen */
+    }
+    .social-icon {
+        font-size: 22px; /* Kleinere iconen op mobiele apparaten */
+    }
 }
 
 /* Hero Section */
