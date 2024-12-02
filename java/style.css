@@ -141,6 +141,7 @@ body {
 
     .feature-item {
         width: 100%; /* Full width for smaller screens */
+        margin-right: 10px; /* Less margin on medium screens */
     }
 
      /* General */
@@ -172,6 +173,7 @@ body {
     /* Features Section */
     .feature-item img {
         height: auto; /* Ensure image scaling works well on smaller screens */
+        margin-right: 10px; /* Less margin on medium screens */
     }
 
     /* General */
@@ -239,6 +241,8 @@ body {
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px; /* Adjust this for vertical space */
+    margin-right: 20px; /* Add this to create space between items horizontally */
 }
 
 .feature-item:hover {
