@@ -279,12 +279,11 @@ body {
 
 /* Stijl voor de Bestellen link in de header */
 .bestellen-link {
-    color: var(--white); /* Zorg ervoor dat de tekst wit is */
-    font-size: 18px;
+    color: #ffc107; /* Geel */
+    font-size: 1rem;
     font-weight: 600; /* Maak de tekst dikgedrukt */
     text-decoration: none; /* Verwijder de onderstreping van de link */
     margin-left: 20px; /* Voeg wat ruimte toe tussen de link en andere elementen */
-    transition: color 0.3s ease; /* Voeg een fade-in effect toe bij hover */
 }
 
 .bestellen-link:hover {
