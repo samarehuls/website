@@ -121,8 +121,9 @@ body {
     }
 
     .bestellen-link {
-        margin: 5px 0;
-    }
+        margin: 5px 0;          /* top/bottom = 5px, left/right = 0px */
+        margin-right: 30px;     /* right margin = 30px */
+    }    
 
     .social-links {
         gap: 15px;
@@ -168,6 +169,7 @@ body {
 
     .bestellen-link {
         font-size: 0.9rem;
+        margin-right: 30px;
     }
 
     /* Features Section */
