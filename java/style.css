@@ -24,7 +24,7 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -105,7 +105,10 @@ body {
 }
 
 /* Responsive Design */
+
+/* Medium screens (Tablets and smaller, max-width: 768px) */
 @media (max-width: 768px) {
+    /* Header */
     .header-content {
         flex-direction: column;
         align-items: flex-start;
@@ -129,9 +132,31 @@ body {
     .social-icon {
         font-size: 1.2rem;
     }
+
+    /* Features Section */
+    .features {
+        flex-direction: column; /* Stack feature items vertically */
+        align-items: center; /* Center align feature items */
+    }
+
+    .feature-item {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+     /* General */
+     .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .features .container, 
+    .about .container {
+        text-align: center; /* Consistent centering */
+    }
 }
 
+/* Small screens (Mobile, max-width: 480px) */
 @media (max-width: 480px) {
+    /* Header */
     #bakery-name {
         font-size: 1.2rem;
     }
@@ -143,7 +168,18 @@ body {
     .bestellen-link {
         font-size: 0.9rem;
     }
+
+    /* Features Section */
+    .feature-item img {
+        height: auto; /* Ensure image scaling works well on smaller screens */
+    }
+
+    /* General */
+    .container {
+        padding: 10px; /* Reduce padding for mobile screens */
+    }
 }
+
 
 /* Hero Section */
 .main-content {
@@ -189,6 +225,7 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
 }
 
@@ -271,10 +308,6 @@ body {
     font-size: 1.1em; /* Kleinere tekstgrootte voor de paragrafen */
     line-height: 1.5; /* Kleinere line-height voor betere verhouding */
     color: white; /* Witte tekstkleur voor de paragraaf */
-}
-
-.features {
-    margin-bottom: 2.5em; /* Iets minder ruimte onder de features-sectie */
 }
 
 /* Stijl voor de Bestellen link in de header */
