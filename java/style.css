@@ -377,10 +377,27 @@ body {
 }
 /* Footer */
 .footer {
-    background: var(--header-bg);
-    color: var(--white);
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
+    background: var(--header-bg); /* Matches the header background */
+    color: var(--white); /* Ensures text is readable on dark background */
+    text-align: center; /* Centers content */
+    padding: 20px; /* Adds spacing for better layout */
+    margin-top: 60px; /* Space between footer and content */
+    margin-bottom: 10px; /* Bottom margin for breathing room */
     position: relative;
+}
+
+.footer p {
+    font-size: 0.9rem; /* Keeps text slightly smaller but readable */
+    margin: 10px 0; /* Adds spacing between paragraphs */
+    color: var(--white); /* Text remains white for consistency */
+}
+
+.footer a {
+    color: var(--accent-color); /* Highlight links with the accent color */
+    text-decoration: none; /* Minimal styling for links */
+}
+
+.footer a:hover {
+    color: var(--secondary-accent); /* Slight change for hover effect */
+    text-decoration: underline; /* Indicates interactiveness */
 }
