@@ -401,3 +401,7 @@ body {
     color: var(--secondary-accent); /* Slight change for hover effect */
     text-decoration: underline; /* Indicates interactiveness */
 }
+
+.footer .container {
+    display: block; /* Ensure vertical stacking */
+}
