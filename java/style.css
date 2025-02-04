@@ -74,7 +74,7 @@ body {
     align-items: center;
 }
 
-.bestellen-link {
+.navigate-link {
     margin-right: 15px;
     font-size: 1rem;
     color: #333;
@@ -84,7 +84,7 @@ body {
     border-radius: 5px;
 }
 
-.bestellen-link:hover {
+.navigate-link:hover {
     background-color: #f7f7f7;
     color: #000;
 }
@@ -120,7 +120,7 @@ body {
         justify-content: flex-start;
     }
 
-    .bestellen-link {
+    .navigate-link {
         margin: 5px 0;          /* top/bottom = 5px, left/right = 0px */
         margin-right: 30px;     /* right margin = 30px */
     }    
@@ -167,7 +167,7 @@ body {
         max-width: 120px;
     }
 
-    .bestellen-link {
+    .navigate-link {
         font-size: 0.9rem;
         margin-right: 30px;
     }
@@ -317,7 +317,7 @@ body {
 }
 
 /* Stijl voor de Bestellen link in de header */
-.bestellen-link {
+.navigate-link {
     color: #ffc107; /* Geel */
     font-size: 1rem;
     font-weight: 600; /* Maak de tekst dikgedrukt */
