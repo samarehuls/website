@@ -31,7 +31,7 @@ body {
 /* Header */
 /* General header styling */
 .header {
-    background-color: #fff;
+    background-color: var(--white);
     padding: 5px 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -87,19 +87,19 @@ body {
 
 .navigate-link:hover {
     background-color: #f7f7f7;
-    color: #215350;
+    color: var(--text-color);
 }
 
 /* Add an active class to highlight the page you click */
 .navigate-link:active {
-    background-color: #215350;
-    color: #d8e8ef;
+    background-color: var(--text-color);
+    color: var(--secondary-accent);
   }
 
 /* Add an active class to highlight the current page */
 .navigate-link.active {
-    background-color: #d8e8ef;
-    color: #f2a73b;
+    background-color: var(--secondary-accent);
+    color: var(--accent-color);
   }
 
 /* Responsive Design */
@@ -277,7 +277,7 @@ body {
 
 /* About Section */
 .about {
-    background-color: #F2A73B; /* Oranje/geel als achtergrondkleur */
+    background-color: var(--accent-color); /* Oranje/geel als achtergrondkleur */
     padding: 3em 1.5em; /* Iets minder ruimte binnen de sectie */
     margin-top: 2.5em; /* Iets minder ruimte boven deze sectie */
     border-radius: 8px; /* Subtielere afgeronde hoeken */
@@ -321,10 +321,6 @@ body {
     font-weight: 600; /* Maak de tekst dikgedrukt */
     text-decoration: none; /* Verwijder de onderstreping van de link */
     margin-left: 20px; /* Voeg wat ruimte toe tussen de link en andere elementen */
-}
-
-.bestellen-link:hover {
-    color: var(--accent-color); /* Verander de kleur naar de accentkleur bij hover */
 }
 
 /* Non-home pages */
@@ -440,7 +436,7 @@ body {
 
 .footer .social-icon {
     font-size: 1.5rem;
-    color: #f2a73b;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
