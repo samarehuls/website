@@ -102,21 +102,6 @@ body {
     color: #f2a73b;
   }
 
-.social-links {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icon {
-    font-size: 1.5rem;
-    color: #333;
-    text-decoration: none;
-}
-
-.social-icon:hover {
-    color: #555;
-}
-
 /* Responsive Design */
 
 /* Medium screens (Tablets and smaller, max-width: 768px) */
@@ -138,15 +123,6 @@ body {
         margin-right: 0px;     /* right margin = 10px */
     }    
 
-    .social-links {
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .social-icon {
-        font-size: 1.2rem;
-    }
-
     /* Features Section */
     .features {
         flex-direction: column; /* Stack feature items vertically */
@@ -166,6 +142,15 @@ body {
     .features .container, 
     .about .container {
         text-align: center; /* Consistent centering */
+    }
+
+    .social-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
     }
 }
 
@@ -417,4 +402,20 @@ body {
 
 .footer .container {
     display: block; /* Ensure vertical stacking */
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 10px;
+}
+
+.footer .social-icon {
+    font-size: 1.5rem;
+    color: #f2a73b;
+    text-decoration: none;
+}
+
+.footer .social-icon:hover {
+    color: #555;
 }
