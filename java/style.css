@@ -152,6 +152,15 @@ body {
     .social-icon {
         font-size: 1.2rem;
     }
+
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%; /* Make it more responsive */
+    }
 }
 
 /* Small screens (Mobile, max-width: 480px) */
@@ -180,6 +189,7 @@ body {
     .container {
         padding: 10px; /* Reduce padding for mobile screens */
     }
+    
 }
 
 
@@ -317,6 +327,27 @@ body {
     font-size: 1.1em; /* Kleinere tekstgrootte voor de paragrafen */
     line-height: 1.5; /* Kleinere line-height voor betere verhouding */
     color: white; /* Witte tekstkleur voor de paragraaf */
+}
+
+.about-box {
+    display: flex;
+    align-items: center;  /* Centers content vertically */
+    gap: 30px;  /* Space between text and image */
+    background: var(--white);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-content {
+    flex: 1; /* Takes up remaining space */
+}
+
+.about-image img {
+    width: 280px;  /* Adjust size as needed */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Stijl voor links in de header */
