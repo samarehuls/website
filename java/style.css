@@ -99,7 +99,7 @@ body {
 /* Add an active class to highlight the current page */
 .navigate-link.active {
     background-color: var(--secondary-accent);
-    color: var(--accent-color);
+    color: var(--text-color);
   }
 
 /* Responsive Design */
@@ -321,7 +321,7 @@ body {
 
 /* Stijl voor links in de header */
 .navigate-link {
-    color: #ffc107; /* Geel */
+    color: var(--text-color); /* Donkergroen */
     font-size: 1rem;
     font-weight: 600; /* Maak de tekst dikgedrukt */
     text-decoration: none; /* Verwijder de onderstreping van de link */
