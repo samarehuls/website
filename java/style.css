@@ -158,6 +158,12 @@ body {
         text-align: center;
     }
 
+    .about-image,
+    .about-content {
+        flex: unset; /* Reset flex settings */
+        width: 100%;
+    }
+
     .about-image img {
         width: 80%; /* Make it more responsive */
     }
@@ -341,11 +347,16 @@ body {
 }
 
 .about-content {
-    flex: 1; /* Takes up remaining space */
+    flex: 2; /* Reduce this value to give more space to the image, 1=take up remaining space */
+}
+
+.about-image {
+    flex: 1.5; /* Increase this value to make the image column wider */
 }
 
 .about-image img {
-    width: 280px;  /* Adjust size as needed */
+    width: 100%;  /* Ensures the image fills its container */
+    max-width: 400px; /* Adjust max width as needed */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
