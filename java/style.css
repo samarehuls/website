@@ -376,7 +376,7 @@ body {
     padding: 3em 1.5em;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
 }
 
 .box-section h1 {
@@ -419,7 +419,7 @@ body {
 
 /* Contact page */
 .contact-details {
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
 }
 
@@ -441,7 +441,7 @@ body {
 .contact-intro, .contact-social {
     display: block; /* Stacks sections */
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 /* Footer */
