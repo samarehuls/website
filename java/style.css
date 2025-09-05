@@ -314,7 +314,7 @@ body {
 
 .about ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
     margin: 0;
     text-align: center; /* Lijst ook centreren */
 }
@@ -391,6 +391,13 @@ body {
     color: var(--text-color);
     max-width: 800px;
     margin: 0 auto 2em;
+}
+
+.box-section ul {
+    list-style: none;      /* shows no bullets */
+    padding-left: 2em;     /* indent the list */
+    margin-left: 0;      /* optional extra spacing */
+    text-align: left;      /* align text left */
 }
 
 .box-section .cta-button {
